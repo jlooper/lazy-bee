@@ -1,0 +1,114 @@
+{
+"skeleton": { "spine": "1.9.07", "hash": "sSw9kSbO928vgIcxE2ac9nQGvxE", "width": 184.77, "height": 213.22 },
+"bones": [
+	{ "name": "root", "rotation": -0.53 },
+	{ "name": "body-bone", "parent": "root", "length": 94.88, "x": -3.49, "y": -1.03, "rotation": -134.28 },
+	{ "name": "head-bone", "parent": "root", "length": 32.85, "x": -3.32, "y": -1.52, "rotation": 45.82 },
+	{ "name": "left-wing-bone", "parent": "root", "length": 62.62, "x": -9.71, "rotation": 172.14 },
+	{ "name": "right-wing-bone", "parent": "root", "length": 54.92, "x": -1.19, "y": -7.83, "rotation": -90.22 },
+	{ "name": "bone", "parent": "right-wing-bone", "x": -170.3, "y": -265.68 }
+],
+"ik": [],
+"slots": [
+	{ "name": "body-all", "bone": "body-bone", "attachment": "body" },
+	{ "name": "body", "bone": "root" },
+	{ "name": "head2-all", "bone": "head-bone", "attachment": "head" },
+	{ "name": "head", "bone": "root" },
+	{ "name": "leftwing-all", "bone": "left-wing-bone", "attachment": "leftwing" },
+	{ "name": "leftwing", "bone": "root" },
+	{ "name": "rightwing-all", "bone": "right-wing-bone", "attachment": "rightwing" },
+	{ "name": "rightwing", "bone": "root" }
+],
+"skins": {
+	"default": {
+		"head2-all": {
+			"head": { "x": 37.44, "y": 12, "rotation": -114.92, "width": 83, "height": 71 }
+		},
+		"leftwing-all": {
+			"leftwing": { "x": 46.13, "y": 13.4, "rotation": 100.14, "width": 34, "height": 96 }
+		},
+		"body-all": {
+			"body": { "x": 44.57, "y": 2.88, "scaleX": 0.81, "scaleY": 0.836, "rotation": 63.75, "width": 179, "height": 167 }
+		},
+		"rightwing-all": {
+			"rightwing": { "x": 54.66, "y": -7.77, "rotation": 33.42, "width": 85, "height": 64 }
+		}
+	}
+},
+"animations": {
+	"fly": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"right-wing-bone": {
+				"rotate": [
+					{ "time": 0.1, "angle": 12.1 },
+					{ "time": 0.1666, "angle": 25.15 },
+					{ "time": 0.2666, "angle": 9.57 },
+					{ "time": 0.3333, "angle": 5.2 },
+					{ "time": 0.5, "angle": -5.79 }
+				],
+				"translate": [
+					{ "time": 0.1666, "x": -0.42, "y": 0.07 }
+				]
+			},
+			"left-wing-bone": {
+				"rotate": [
+					{ "time": 0.1, "angle": -10.63 },
+					{ "time": 0.1666, "angle": -17.7 },
+					{ "time": 0.2666, "angle": -11.24 },
+					{ "time": 0.3333, "angle": -11.21 },
+					{ "time": 0.5, "angle": 4.83 }
+				],
+				"translate": [
+					{ "time": 0, "x": -10.65, "y": -0.65 },
+					{ "time": 0.1, "x": -12, "y": -2.42 },
+					{ "time": 0.1666, "x": -12.86, "y": -2.38 },
+					{ "time": 0.2666, "x": -13.18, "y": -1.71 },
+					{ "time": 0.3333, "x": -11.5, "y": -1.7 },
+					{ "time": 0.5, "x": -8.13, "y": -1.67 }
+				]
+			},
+			"body-bone": {
+				"rotate": [
+					{ "time": 0, "angle": -0.94 },
+					{ "time": 0.1666, "angle": 359.99, "curve": "stepped" },
+					{ "time": 0.3333, "angle": 359.99 },
+					{ "time": 0.5, "angle": 1.16 }
+				]
+			},
+			"head-bone": {
+				"rotate": [
+					{ "time": 0, "angle": 4.44 },
+					{ "time": 0.5, "angle": 0.18 }
+				]
+			}
+		}
+	},
+	"rest": {
+		"bones": {
+			"left-wing-bone": {
+				"rotate": [
+					{ "time": 0, "angle": -330.25 },
+					{ "time": 0.1666, "angle": -344.79 }
+				]
+			},
+			"right-wing-bone": {
+				"rotate": [
+					{ "time": 0, "angle": -25.28 },
+					{ "time": 0.1666, "angle": -15.82 }
+				]
+			}
+		}
+	}
+}
+}
